@@ -1,0 +1,38 @@
+{% extends 'bengkel/base.html' %}
+
+{% block title %}Layanan - Bengkel Autowin{% endblock %}
+
+{% load static %}
+
+{% block content %}
+<h2 class="mt-4">Layanan Kami</h2>
+<div class="row">
+    <div class="col-md-4">
+        <div class="card">
+            <img src="{% static 'bengkel/images/service1.jpg' %}" class="card-img-top" alt="Service 1">
+            <div class="card-body">
+                <h5 class="card-title">Servis Umum</h5>
+                <p class="card-text">Pemeriksaan dan perbaikan umum untuk kendaraan Anda.</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card">
+            <img src="{% static 'bengkel/images/service2.jpg' %}" class="card-img-top" alt="Service 2">
+            <div class="card-body">
+                <h5 class="card-title">Ganti Oli</h5>
+                <p class="card-text">Layanan penggantian oli cepat dan berkualitas.</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card">
+            <img src="{% static 'bengkel/images/service3.jpg' %}" class="card-img-top" alt="Service 3">
+            <div class="card-body">
+                <h5 class="card-title">Servis Rem</h5>
+                <p class="card-text">Pastikan sistem rem Anda berfungsi dengan baik.</p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

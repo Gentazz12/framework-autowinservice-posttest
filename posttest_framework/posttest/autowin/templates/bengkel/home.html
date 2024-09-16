@@ -1,0 +1,26 @@
+{% extends 'bengkel/base.html' %} {% block title %}AUTOWIN SERVICE{% endblock %}
+{% load static %} {% block content %}
+<div
+  class="container-fluid landing-page d-flex flex-column justify-content-center align-items-center"
+>
+
+  <img
+    src="{% static 'bengkel/images/autowin_logo_white.png' %}"
+    alt="Autowin Logo"
+    class="logo"
+  />
+
+  <h1 class="display-3 mt-4">
+    Selamat Datang di <br />
+    Bengkel Autowin
+  </h1>
+  <p class="lead mt-3">
+    Servis kendaraan dengan kualitas terbaik untuk perjalanan Anda.
+  </p>
+
+
+  <a href="{% url 'services' %}" class="btn btn-custom btn-lg mt-4"
+    >Lihat Layanan Kami</a
+  >
+</div>
+{% endblock %}
