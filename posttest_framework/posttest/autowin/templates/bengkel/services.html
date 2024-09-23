@@ -35,4 +35,26 @@
         </div>
     </div>
 </div>
+
+<h2 class="mt-4">Riwayat Servis Pelanggan</h2>
+<div class="row">
+    {% for servis in servis_list %}
+    <div class="col-md-4 mb-3">
+        <div class="card shadow-sm">
+            <div class="card-body">
+                <h5 class="card-title">{{ servis.jenis_servis }}</h5>
+                <p class="card-text text-white">Pelanggan: {{ servis.pelanggan.nama }}</p> 
+                <p class="card-text text-white">Biaya: Rp {{ servis.biaya }}</p> 
+            </div>
+        </div>
+    </div>
+    {% empty %}
+    <div class="col-md-12">
+        <div class="alert alert-info" role="alert">
+            Belum ada riwayat servis pelanggan.
+        </div>
+    </div>
+    {% endfor %}
+</div>
+
 {% endblock %}

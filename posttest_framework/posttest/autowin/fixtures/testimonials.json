@@ -1,0 +1,103 @@
+[
+    {
+      "model": "bengkel.testimonial",
+      "pk": 1,
+      "fields": {
+        "nama": "John Doe",
+        "pekerjaan": "Software Engineer",
+        "komentar": "Layanan cepat dan memuaskan!",
+        "rating": 5
+      }
+    },
+    {
+      "model": "bengkel.testimonial",
+      "pk": 2,
+      "fields": {
+        "nama": "Jane Smith",
+        "pekerjaan": "Designer",
+        "komentar": "Saya sangat puas dengan hasil servisnya.",
+        "rating": 5
+      }
+    },
+    {
+      "model": "bengkel.testimonial",
+      "pk": 3,
+      "fields": {
+        "nama": "David Johnson",
+        "pekerjaan": "Pengusaha",
+        "komentar": "Kualitas servis luar biasa!",
+        "rating": 4
+      }
+    },
+    {
+      "model": "bengkel.testimonial",
+      "pk": 4,
+      "fields": {
+        "nama": "Emily Davis",
+        "pekerjaan": "Marketing",
+        "komentar": "Harga terjangkau dan pelayanan ramah.",
+        "rating": 5
+      }
+    },
+    {
+      "model": "bengkel.testimonial",
+      "pk": 5,
+      "fields": {
+        "nama": "Chris Lee",
+        "pekerjaan": "Mechanic",
+        "komentar": "Proses servis cepat dan hasilnya memuaskan.",
+        "rating": 4
+      }
+    },
+    {
+      "model": "bengkel.testimonial",
+      "pk": 6,
+      "fields": {
+        "nama": "Alice Kim",
+        "pekerjaan": "Accountant",
+        "komentar": "Mekanik profesional dan sopan.",
+        "rating": 5
+      }
+    },
+    {
+      "model": "bengkel.testimonial",
+      "pk": 7,
+      "fields": {
+        "nama": "Michael Brown",
+        "pekerjaan": "Freelancer",
+        "komentar": "Sangat direkomendasikan!",
+        "rating": 5
+      }
+    },
+    {
+      "model": "bengkel.testimonial",
+      "pk": 8,
+      "fields": {
+        "nama": "Samantha White",
+        "pekerjaan": "HR Manager",
+        "komentar": "Layanan servis terbaik yang pernah saya coba.",
+        "rating": 5
+      }
+    },
+    {
+      "model": "bengkel.testimonial",
+      "pk": 9,
+      "fields": {
+        "nama": "Robert Miller",
+        "pekerjaan": "Driver",
+        "komentar": "Sangat cepat dan tidak perlu antri lama.",
+        "rating": 4
+      }
+    },
+    {
+      "model": "bengkel.testimonial",
+      "pk": 10,
+      "fields": {
+        "nama": "Linda Wilson",
+        "pekerjaan": "Chef",
+        "komentar": "Semuanya berjalan lancar dan sesuai ekspektasi.",
+        "rating": 5
+      }
+    }
+  ]
+  
