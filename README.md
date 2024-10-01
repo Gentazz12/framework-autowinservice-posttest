@@ -36,3 +36,30 @@
 ![image](https://github.com/user-attachments/assets/4a6599bc-6edf-4f6b-8462-e66a7eb5ac17)
 ![image](https://github.com/user-attachments/assets/0a080569-6ffb-4e9f-b1c4-8cc3833a5006)
 ![image](https://github.com/user-attachments/assets/24e0b91b-c5f8-4d00-8b9e-d7e5fb7e16fb)
+
+
+# POSTTEST 3
+## Model pelanggan
+![image](https://github.com/user-attachments/assets/44446c47-a8cb-477e-a31f-071563ebd0d3)
+![image](https://github.com/user-attachments/assets/8bff9347-6b41-4b7e-96c6-8c32bad990f2)
+
+## Model servis
+![image](https://github.com/user-attachments/assets/85a84860-cdf0-4906-8c95-a0bfeb82302e)
+![image](https://github.com/user-attachments/assets/529c34a7-b6c3-49eb-a545-c1dd1a1c4ef8)
+
+## Model riwayat servis
+![image](https://github.com/user-attachments/assets/c4ed1cd3-d225-4104-8431-af67014de90a)
+![image](https://github.com/user-attachments/assets/b0aa0ad5-ac7b-41c6-9267-8e6b68db614d)
+
+### Penjelasan Function custom
+Jadi function custom yang saya gunakan dan saya terapkan adalah saat kita menambah data servis baru maka akan otomatis menambah data di riwayat servis
+
+## Penggunaan static assets
+### bengkel/images/service1.jpg - services.html
+### bengkel/images/service2.jpg - services.html
+### bengkel/images/service3.jpg - services.html
+### bengkel/images/autowin_logo_white.png - home.html
+
+
+
+
