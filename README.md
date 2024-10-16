@@ -60,6 +60,15 @@ Jadi function custom yang saya gunakan dan saya terapkan adalah saat kita menamb
 ### bengkel/images/service3.jpg - services.html
 ### bengkel/images/autowin_logo_white.png - home.html
 
+# POSTTEST 4
+## Table
+![image](https://github.com/user-attachments/assets/6808fc7c-ff14-4bc2-aa43-aa6a7e0ec069)
+
+## Form
+![image](https://github.com/user-attachments/assets/2fc177b3-5b3a-4da6-a004-a66b0154ae6c)
+![image](https://github.com/user-attachments/assets/238d748f-a4c2-4d31-88fc-5e7d6dc1be37)
+
+
 
 
 
