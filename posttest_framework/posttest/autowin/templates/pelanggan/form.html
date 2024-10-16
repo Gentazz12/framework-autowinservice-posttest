@@ -1,0 +1,27 @@
+{% csrf_token %}
+<!-- Nama Field -->
+<div class="mb-3">
+    <label for="id_nama" class="form-label">Nama</label>
+    <input type="text" class="form-control" id="id_nama" name="nama" value="{{ form.nama.value|default_if_none:'' }}" required>
+    <div class="invalid-feedback">{{ form.nama.errors }}</div>
+</div>
+<!-- Email Field -->
+<div class="mb-3">
+    <label for="id_email" class="form-label">Email</label>
+    <input type="email" class="form-control" id="id_email" name="email" value="{{ form.email.value|default_if_none:'' }}" required>
+    <div class="invalid-feedback">{{ form.email.errors }}</div>
+</div>
+<!-- Nomor HP Field -->
+<div class="mb-3">
+    <label for="id_no_hp" class="form-label">No.Hp</label>
+    <input type="text" class="form-control" id="id_no_hp" name="no_hp" value="{{ form.no_hp.value|default_if_none:'' }}" required>
+    <div class="invalid-feedback">{{ form.no_hp.errors }}</div>
+</div>
+<!-- Alamat Field -->
+<div class="mb-3">
+    <label for="id_alamat" class="form-label">Alamat</label>
+    <input type="text" class="form-control" id="id_alamat" name="alamat" value="{{ form.alamat.value|default_if_none:'' }}" required>
+    <div class="invalid-feedback">{{ form.alamat.errors }}</div>
+</div>
+<button type="submit" class="btn btn-primary">Simpan</button>
+
