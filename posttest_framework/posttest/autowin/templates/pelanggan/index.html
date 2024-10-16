@@ -1,0 +1,100 @@
+{% extends 'bengkel/base.html' %} {% block title %} Daftar Mahasiswa {%endblock%} {% block content %}
+<div class="container">
+  <h1>Daftar Pelanggan</h1>
+  <a href="{% url 'pelanggan_create' %}" class="btn btn-primary mb-3"
+    >Tambah Pelanggan</a
+  >
+  <form action="{% url 'pelanggan_index' %}" method="get" class="d-flex mb-3">
+    <input
+      type="search"
+      class="form-control me-2"
+      name="q"
+      placeholder="Cari Pelanggan___"
+      value="{{query|default:''}}"
+      aria-label="Search"
+    />
+    <button class="btn btn-outline-success" type="submit"></button>
+  </form>
+  <table class="table" style="color: white">
+    <thead>
+      <tr>
+        <th>Nama</th>
+        <th>Email</th>
+        <th>No. HP</th>
+        <th>Alamat</th>
+        <th>Aksi</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for pelanggan in pelanggans %}
+      <tr>
+        <td>{{ pelanggan.nama }}</td>
+        <td>{{ pelanggan.email }}</td>
+        <td>{{ pelanggan.no_hp }}</td>
+        <td>{{ pelanggan.alamat }}</td>
+        <td>
+          <a
+            href="{% url 'pelanggan_update' pelanggan.id %}"
+            class="btn btn-sm btn-warning"
+            >Ubah</a
+          >
+          <button
+            class="btn btn-sm btn-danger"
+            onclick="confirmDelete({{pelanggan.id}})"
+          >
+            Hapus
+          </button>
+        </td>
+      </tr>
+      {% empty %}
+      <tr>
+        <td colspan="6" class="text-center">Tidak Ada Pelanggan</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+<script>
+  function confirmDelete(pelangganId) {
+    Swal.fire({
+      title: "Data pelanggan akan dihapus",
+      text: "Data tidak akan bisa dikembalikan!",
+      icon: "warning",
+      showCancelButton: true,
+      confirmButtonColor: "#3085d6",
+      cancelButtonColor: "#d33",
+      confirmButtonText: "Ya, Hapus!",
+    }).then((result) => {
+      if (result.isConfirmed) {
+        // Ini AJAX
+        fetch(`/pelanggan/delete/${pelangganId}`, {
+          method: "POST",
+          headers: {
+            "X-CSRFToken": "{{ csrf_token }}",
+          },
+        }).then((response) => {
+          if (response.ok) {
+            Swal.fire(
+              "Deleted!",
+              "Pelanggan has been deleted.",
+              "success"
+            ).then(() => {
+              // Reload the page after success
+              window.location.reload();
+            });
+          } else {
+            Swal.fire(
+              "Error!",
+              "There was an issue deleting the student.",
+              "error"
+            );
+          }
+        });
+      }
+    });
+  }
+</script>
+{% endblock %}
